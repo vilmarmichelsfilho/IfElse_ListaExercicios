@@ -15,10 +15,31 @@
 
     //ENTRADA
 
+    const tipo = prompt(`Insira o tipo de combustivel(A-Álcool e G-Gasolina):`);
+    const litros = Number(prompt(`Insira quantos litros você quer comprar:`));
 
     //PROCESSAMENTO
 
-    
+    let resposta;
+
+    if (tipo.toUpperCase() == "A") {
+        resposta = 6.10 * litros;
+        if (litros <= 20) {
+            resposta = resposta - resposta * 0.03;
+        } else {
+            resposta = resposta - resposta * 0.05;
+        };
+    } else {
+        resposta = 6.50 * litros;
+        if (litros <= 20) {
+            resposta = resposta - resposta * 0.04;
+        } else {
+            resposta = resposta - resposta * 0.06;
+        };
+    };
+
     //SAÍDA
+
+    alert(`O valor total é de R$ ${resposta}`);
 
 </script>

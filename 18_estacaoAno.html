@@ -1,0 +1,49 @@
+<script>
+    /*
+    PROBLEMA: ESTAÇÃO DO ANO
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+
+    const hemisferio = prompt(`Em qual hemisfério você está?(N-Norta/S-Sul):`);
+    const mes = prompt(`Qual o mês atual?`);
+
+    //PROCESSAMENTO
+
+    hemisferio.toLowerCase();
+    mes.toLowerCase();
+
+    let resposta;
+    if (hemisferio == "norte") {
+        if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+            resposta = "Verão";
+        } else if (mes == "março" || mes == "abril" || mes == "maio") {
+            resposta = "Outono";
+        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
+            resposta = "Inverno";
+        } else if ( mes == "setembro" || mes == "outubro" || mes == "novembro") {
+            resposta = "Primavera";
+        } else {
+            resposta = "Mês inválido";
+        };
+    } else if (hemisferio == "sul") {
+        if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+            resposta = "Verão";
+        } else if (mes == "março" || mes == "abril" || mes == "maio") {
+            resposta = "Outono";
+        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
+            resposta = "Inverno";
+        } else if ( mes == "setembro" || mes == "outubro" || mes == "novembro") {
+            resposta = "Primavera";
+        } else {
+            resposta = "Mês inválido";
+        };
+    } else {
+        resposta = "Hemisfério inválido";
+    };
+    
+    //SAÍDA
+
+</script>
