@@ -30,13 +30,13 @@
         };
     } else if (hemisferio == "sul") {
         if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
-            resposta = "Verão";
-        } else if (mes == "março" || mes == "abril" || mes == "maio") {
-            resposta = "Outono";
-        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
-            resposta = "Inverno";
-        } else if ( mes == "setembro" || mes == "outubro" || mes == "novembro") {
             resposta = "Primavera";
+        } else if (mes == "março" || mes == "abril" || mes == "maio") {
+            resposta = "Inverno";
+        } else if (mes == "junho" || mes == "julho" || mes == "agosto") {
+            resposta = "Outono";
+        } else if ( mes == "setembro" || mes == "outubro" || mes == "novembro") {
+            resposta = "Verão";
         } else {
             resposta = "Mês inválido";
         };
@@ -45,5 +45,7 @@
     };
     
     //SAÍDA
-
+    
+    alert(resposta);
+    
 </script>
